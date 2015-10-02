@@ -1,0 +1,149 @@
+
+/* GENERAL */
+
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+body {
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	background-color: #e0e5e5;
+
+}
+
+p {
+	font-size: 1em;
+	color: black;
+}
+
+#wrapper {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+
+/* HEADER */
+
+h1 {
+	font-family: 'Lobster', sans-serif;
+	font-size: 4.5em;
+	text-shadow: 1px 1px 1px #e0e5e5;
+	animation-duration: 3s;
+	animation-name: slidein;
+}
+
+@keyframes slidein {
+	from {
+		margin-left: 100%;
+		width: 300%;
+	}
+
+	to {
+		margin-left: 0%;
+		width: 100%;
+	}
+
+}
+
+#heading {
+/*	position: fixed;*/
+	background-color: #99a3a3;
+	width: 100%;
+	padding: 25px;
+	z-index: 1;
+	margin: -10px -10px 25px -10px;
+	text-align: center;
+	border-bottom: 2px solid black;
+}
+
+/* ROWS */
+
+.row {
+	display: inline-block;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.picture {
+	background-color: #99a3a3;
+	border: 1px solid black;
+	padding: 5px;
+	margin: 1.5%;
+	width: 20%;
+	display: inline-block;
+	float: left;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.picture:hover {
+	box-shadow: 2px 2px 1px black;
+}
+
+
+img {
+	max-width: 85%;
+}
+
+h3 {
+	margin: 5px;
+	color: black;
+}
+
+/* FOOTER */
+
+
+footer {
+	border-top: 2px solid #99a3a3;
+	width: 80%;
+	margin: 30px auto;
+	text-align: center;
+	font-family: 'Lobster';
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 800px) {
+	.picture {
+		width: 40%;
+	}
+
+	.row {
+		width: 110%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	h1 {
+		font-size: 3.5em;
+	}
+
+	p {
+		font-size: 1em;
+	}
+}
+
+@media (max-width: 475px) {
+	.picture {
+		width: 90%;
+	}
+
+	.row {
+		width: 105%;
+	}
+
+	h1 {
+		font-size: 2.75em;
+	}
+
+	p {
+		font-size: 1em;
+	}
+
+	h3 {
+		font-size: 1.25em;
+	}
+}
+
+
